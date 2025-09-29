@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>WonderKids - Отзывы</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0da6f2",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .star-rating {
+            display: flex;
+            gap: 0.25rem;
+        }
+        .star {
+            width: 1.25rem;
+            height: 1.25rem;
+            color: #d1d5db;}
+        .star-rating .star.filled {
+            color: #0da6f2;}
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="flex flex-col min-h-screen">
+<header class="bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-200 dark:border-gray-800">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold text-gray-900 dark:text-white">WonderKids</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary transition-colors" href="#">О нас</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary transition-colors" href="#">Программы</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary transition-colors" href="#">Педагоги</a>
+<a class="text-sm font-bold text-primary" href="#">Отзывы</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary transition-colors" href="#">Контакты</a>
+</nav>
+<div class="flex items-center">
+<button class="bg-primary text-white font-bold text-sm py-2 px-4 rounded-lg hover:bg-primary/90 transition-all">
+                            Подать заявку
+                        </button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<section class="py-16 sm:py-24">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white tracking-tight">Что говорят наши родители</h1>
+<p class="mt-4 max-w-2xl mx-auto text-lg text-gray-500 dark:text-gray-400">Отзывы от счастливых семей, которые доверяют нам своих детей.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white dark:bg-background-dark/50 rounded-xl shadow-lg overflow-hidden p-6 flex flex-col gap-4 border border-gray-200 dark:border-gray-800">
+<div class="flex items-center gap-4">
+<img alt="Елена П." class="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXPWMN3ovNro7l0dGJFTB9JmvVbgvNDqpARZXeeOm4JyyErVkVsrnU_tWjec5iYFgHHAYIyA48Ed3SF4irvTRLTItYeLtrWZvSb9k3Lez9JFz4W5ssXGpb55e8-qyhsjhs4OGU2tsGy3TolueNTdWOZL-l5HJ3DxejojkXXpbWXvOofV2hoglx3w3_TqEXu8Ibh5t7SwTt7950oe2aKXrhyv3qufdedNcvxlJhCCSfL3NJ2T6sElhTCrzFfxYAB3uHXzCBHlfOyYc"/>
+<div class="flex-1">
+<p class="text-base font-semibold text-gray-900 dark:text-white">Елена П.</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">1 год назад</p>
+</div>
+</div>
+<div class="star-rating">
+<div class="star filled"><svg fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+<div class="star filled"><svg fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+<div class="star filled"><svg fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+<div class="star filled"><svg fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+<div class="star filled"><svg fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+</div>
+<p class="text-gray-600 dark:text-gray-300 leading-relaxed">"Мой сын посещает этот детский сад уже год, и я очень довольна. Педагоги внимательные и заботливые, а программа обучения просто потрясающая. Ребенок всегда с удовольствием и радостью идет в сад."</p>
+</div>
+<div class="bg-white dark:bg-background-dark/50 rounded-xl shadow-lg overflow-hidden p-6 flex flex-col gap-4 border border-gray-200 dark:border-gray-800">
+<div class="flex items-center gap-4">
+<img alt="Дмитрий К." class="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKE1-0_FYxYKhwgJxFgZrerKWiKtDz8uDOqo86B9JkB4xDsQ1K2mrBwBKDaMUHzFIRq6JuWnYn5KWsXlk_vvmTyCdtnpoF0O5tnGYJHbC70js0IgI-jKSPmlvTGtOA6Hn61OIAauYV0sIfjGRhMUzy646FwjlHXBzgHclbkAq-BUw0ng0o9L_EZoNBlKU9XiWtYwRPnSgHWkrGv2wV42yzQ82tUfwLY5PKm9DHyNucV0rbiGyrRcMXVLGkXvebJRGDaHyCNEp0a3E"/>
+<div>
+<p class="text-base font-semibold text-gray-900 dark:text-white">Дмитрий К.</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">2 года назад</p>
+</div>
+</div>
+<div class="star-rating">
+<div class="star filled"><svg fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+<div class="star filled"><svg fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+<div class="star filled"><svg fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+<div class="star filled"><svg fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+<div class="star"><svg fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"></path></svg></div>
+</div>
+<p class="text-gray-600 dark:text-gray-300 leading-relaxed">"Мы перевели своего ребенка в этот детский сад по рекомендации знакомых, и не разочаровались. Воспитатели очень внимательны и заботливые, всегда готовы помочь и поддержать."</p>
+</div>
+<div class="bg-white dark:bg-background-dark/50 rounded-xl shadow-lg overflow-hidden p-6 flex flex-col gap-4 border border-gray-200 dark:border-gray-800">
+<div class="flex items-center gap-4">
+<img alt="Анна С." class="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW204cep-aGy8PIUQbI0ontndjYZyjDtrpPUy3iiT5sa9bPEpXN_o6vxNjEVQupKPSRXo7A4oKYi0-4fPHFHK2laA-w4T2VISavcsA1QAf-8JS1V3UrIoJwz_z7t_ECjcXDugH3Ff2ewKUa1KKyhzCHfCzC6XiKFp5ZxTza8h36GHsHrrqrnhlYCz34ytL0CQUOWwSvmttAZ9YNhGhanNMCX9RJBBHrj0GojiLEiPhicoSLI2ZaIdXyRgntTR-IJAPlqccNDzelQo"/>
+<div>
+<p class="text-base font-semibold text-gray-900 dark:text-white">Анна С.</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">3 года назад</p>
+</div>
+</div>
+<div class="star-rating">
+<div class="star filled"><svg fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+<div class="star filled"><svg fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+<div class="star filled"><svg fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+<div class="star filled"><svg fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+<div class="star filled"><svg fill="currentColor" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+</div>
+<p class="text-gray-600 dark:text-gray-300 leading-relaxed">"Моя дочь посещает этот детский сад уже два года, и я очень довольна. Воспитатели очень внимательны и заботливые, всегда готовы помочь и поддержать. Ребенок всегда с удовольствием и радостью идет в сад."</p>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-white dark:bg-background-dark/50 py-16 sm:py-24">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 dark:text-white tracking-tight">Запишите своего ребенка сегодня</h2>
+<p class="mt-4 max-w-2xl mx-auto text-lg text-gray-500 dark:text-gray-400">Присоединяйтесь к нашей дружной семье WonderKids. Мы ждем вас!</p>
+<div class="mt-8">
+<button class="bg-primary text-white font-bold text-base py-3 px-8 rounded-lg hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/40">
+                            Подать заявку
+                        </button>
+</div>
+</div>
+</section>
+</main>
+</div>
+
+</body></html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sunshine Kids</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#0da6f2",
+            "background-light": "#f5f7f8",
+            "background-dark": "#101c22",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .text-shadow {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-primary/20 dark:border-primary/30">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<div class="flex items-center gap-3">
+<div class="text-primary size-8">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.8261 17.4264C16.7203 18.1174 20.2244 18.5217 24 18.5217C27.7756 18.5217 31.2797 18.1174 34.1739 17.4264C36.9144 16.7722 39.9967 15.2331 41.3563 14.1648L24.8486 40.6391C24.4571 41.267 23.5429 41.267 23.1514 40.6391L6.64374 14.1648C8.00331 15.2331 11.0856 16.7722 13.8261 17.4264Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M39.998 12.236C39.9944 12.2537 39.9875 12.2845 39.9748 12.3294C39.9436 12.4399 39.8949 12.5741 39.8346 12.7175C39.8168 12.7597 39.7989 12.8007 39.7813 12.8398C38.5103 13.7113 35.9788 14.9393 33.7095 15.4811C30.9875 16.131 27.6413 16.5217 24 16.5217C20.3587 16.5217 17.0125 16.131 14.2905 15.4811C12.0012 14.9346 9.44505 13.6897 8.18538 12.8168C8.17384 12.7925 8.16216 12.767 8.15052 12.7408C8.09919 12.6249 8.05721 12.5114 8.02977 12.411C8.00356 12.3152 8.00039 12.2667 8.00004 12.2612C8.00004 12.261 8 12.2607 8.00004 12.2612C8.00004 12.2359 8.0104 11.9233 8.68485 11.3686C9.34546 10.8254 10.4222 10.2469 11.9291 9.72276C14.9242 8.68098 19.1919 8 24 8C28.8081 8 33.0758 8.68098 36.0709 9.72276C37.5778 10.2469 38.6545 10.8254 39.3151 11.3686C39.9006 11.8501 39.9857 12.1489 39.998 12.236ZM4.95178 15.2312L21.4543 41.6973C22.6288 43.5809 25.3712 43.5809 26.5457 41.6973L43.0534 15.223C43.0709 15.1948 43.0878 15.1662 43.104 15.1371L41.3563 14.1648C43.104 15.1371 43.1038 15.1374 43.104 15.1371L43.1051 15.135L43.1065 15.1325L43.1101 15.1261L43.1199 15.1082C43.1276 15.094 43.1377 15.0754 43.1497 15.0527C43.1738 15.0075 43.2062 14.9455 43.244 14.8701C43.319 14.7208 43.4196 14.511 43.5217 14.2683C43.6901 13.8679 44 13.0689 44 12.2609C44 10.5573 43.003 9.22254 41.8558 8.2791C40.6947 7.32427 39.1354 6.55361 37.385 5.94477C33.8654 4.72057 29.133 4 24 4C18.867 4 14.1346 4.72057 10.615 5.94478C8.86463 6.55361 7.30529 7.32428 6.14419 8.27911C4.99695 9.22255 3.99999 10.5573 3.99999 12.2609C3.99999 13.1275 4.29264 13.9078 4.49321 14.3607C4.60375 14.6102 4.71348 14.8196 4.79687 14.9689C4.83898 15.0444 4.87547 15.1065 4.9035 15.1529C4.91754 15.1762 4.92954 15.1957 4.93916 15.2111L4.94662 15.223L4.95178 15.2312ZM35.9868 18.996L24 38.22L12.0131 18.996C12.4661 19.1391 12.9179 19.2658 13.3617 19.3718C16.4281 20.1039 20.0901 20.5217 24 20.5217C27.9099 20.5217 31.5719 20.1039 34.6383 19.3718C35.082 19.2658 35.5339 19.1391 35.9868 18.996Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h1 class="text-xl font-bold text-background-dark dark:text-background-light">Sunshine Kids</h1>
+</div>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-sm font-medium text-background-dark/80 dark:text-background-light/80 hover:text-primary dark:hover:text-primary transition-colors" href="#">О нас</a>
+<a class="text-sm font-medium text-background-dark/80 dark:text-background-light/80 hover:text-primary dark:hover:text-primary transition-colors" href="#">Программы</a>
+<a class="text-sm font-medium text-background-dark/80 dark:text-background-light/80 hover:text-primary dark:hover:text-primary transition-colors" href="#">Галерея</a>
+<a class="text-sm font-medium text-background-dark/80 dark:text-background-light/80 hover:text-primary dark:hover:text-primary transition-colors" href="#">Отзывы</a>
+<a class="text-sm font-medium text-background-dark/80 dark:text-background-light/80 hover:text-primary dark:hover:text-primary transition-colors" href="#">Контакты</a>
+</nav>
+<div class="hidden lg:flex items-center gap-2">
+<button class="px-4 py-2 rounded-lg bg-primary text-white text-sm font-bold transition-transform hover:scale-105">Записаться</button>
+<button class="px-4 py-2 rounded-lg bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold transition-transform hover:scale-105">Позвонить</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<section class="relative min-h-[60vh] flex items-center justify-center text-center text-white px-4">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBwF4TbjUZcjHsMpMSE0vVbs6qg62paB9PtH-IFZwA0zw0hrS6ydOzzKL6NtnRccAJgpEpyH31FGZVrIORSHs55lAO7A-r0FAqOGi1b9SBebwFwMJHkBtpzXAeUcq8hYj7rBlJUn0n2-VamFGg3-Dt1t3rt82sPT8g_JAYeSSzWl5hKCRQTIcKBF_oMmqfgBjizTTKqAYB7qNcX9wiEf1FPFLbhVIrlrVzffQr6lKln5WnA3EPd9KRUcE_0xSMiyGk_zSPpDJLCqd8");'>
+<div class="absolute inset-0 bg-black/40"></div>
+</div>
+<div class="relative z-10 max-w-3xl flex flex-col items-center gap-6">
+<h1 class="text-4xl md:text-6xl font-extrabold text-shadow">Развитие и забота о вашем ребенке</h1>
+<p class="text-base md:text-lg text-shadow">Мы создаем безопасную и вдохновляющую среду для детей от 2 до 6 лет, где они могут расти, учиться и играть.</p>
+<button class="px-6 py-3 rounded-lg bg-primary text-white text-base font-bold transition-transform hover:scale-105">Узнать больше</button>
+</div>
+</section>
+<section class="py-16 sm:py-24">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-12">
+<h2 class="text-3xl sm:text-4xl font-bold text-background-dark dark:text-background-light">Почему выбирают нас</h2>
+<p class="mt-4 text-lg text-background-dark/70 dark:text-background-light/70">Мы предлагаем уникальный подход к образованию и воспитанию, который учитывает индивидуальные потребности каждого ребенка.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-background-light dark:bg-background-dark p-6 rounded-xl border border-primary/20 dark:border-primary/30 flex flex-col items-center text-center">
+<div class="p-3 mb-4 rounded-full bg-primary/10 dark:bg-primary/20 text-primary">
+<svg fill="currentColor" height="32" viewBox="0 0 256 256" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"></path></svg>
+</div>
+<h3 class="text-lg font-bold text-background-dark dark:text-background-light">Безопасная среда</h3>
+<p class="mt-2 text-sm text-background-dark/70 dark:text-background-light/70">Мы обеспечиваем полную безопасность и комфорт для ваших детей.</p>
+</div>
+<div class="bg-background-light dark:bg-background-dark p-6 rounded-xl border border-primary/20 dark:border-primary/30 flex flex-col items-center text-center">
+<div class="p-3 mb-4 rounded-full bg-primary/10 dark:bg-primary/20 text-primary">
+<svg fill="currentColor" height="32" viewBox="0 0 256 256" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"></path></svg>
+</div>
+<h3 class="text-lg font-bold text-background-dark dark:text-background-light">Квалифицированные педагоги</h3>
+<p class="mt-2 text-sm text-background-dark/70 dark:text-background-light/70">Наша команда состоит из опытных и любящих детей профессионалов.</p>
+</div>
+<div class="bg-background-light dark:bg-background-dark p-6 rounded-xl border border-primary/20 dark:border-primary/30 flex flex-col items-center text-center">
+<div class="p-3 mb-4 rounded-full bg-primary/10 dark:bg-primary/20 text-primary">
+<svg fill="currentColor" height="32" viewBox="0 0 256 256" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M224,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h64a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64Z"></path></svg>
+</div>
+<h3 class="text-lg font-bold text-background-dark dark:text-background-light">Развивающие программы</h3>
+<p class="mt-2 text-sm text-background-dark/70 dark:text-background-light/70">Мы предлагаем разнообразные программы, направленные на всестороннее развитие.</p>
+</div>
+<div class="bg-background-light dark:bg-background-dark p-6 rounded-xl border border-primary/20 dark:border-primary/30 flex flex-col items-center text-center">
+<div class="p-3 mb-4 rounded-full bg-primary/10 dark:bg-primary/20 text-primary">
+<svg fill="currentColor" height="32" viewBox="0 0 256 256" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216ZM80,108a12,12,0,1,1,12,12A12,12,0,0,1,80,108Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,176,108Zm-1.07,48c-10.29,17.79-27.4,28-46.93,28s-36.63-10.2-46.92-28a8,8,0,1,1,13.84-8c7.47,12.91,19.21,20,33.08,20s25.61-7.1,33.07-20a8,8,0,0,1,13.86,8Z"></path></svg>
+</div>
+<h3 class="text-lg font-bold text-background-dark dark:text-background-light">Счастливые дети</h3>
+<p class="mt-2 text-sm text-background-dark/70 dark:text-background-light/70">Мы создаем атмосферу радости и позитива, где дети чувствуют себя как дома.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 sm:py-24 bg-primary/5 dark:bg-primary/10">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-12">
+<h2 class="text-3xl sm:text-4xl font-bold text-background-dark dark:text-background-light">Фотогалерея</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<div class="w-full h-0 pb-[100%] relative rounded-lg overflow-hidden group">
+<div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA5WYRDPaInEIbjNRGscgftLFSYiiRsAZssSSLURVhWK5nZpXxfW10C0nE8S1N7e_kPKwnCXN4k-NRcnDKSbUS7TlJZGE5Sq7vORw7NWzbyBNRFYTCRal4-kntF9_B2cCdvOw-pweiBVEGQqh_A-JZ6iV-VVgJQ1o9ZomRljusmHtiSD636NcXc2-N1v_AUY5xILOnF-wlpp1JllkaXlC1UVyP0ddaOg-ZAAu_nmMeH9VYVTT0he9-L1YnroSg7VfWrBvEbM7p4MjE");'></div>
+</div>
+<div class="w-full h-0 pb-[100%] relative rounded-lg overflow-hidden group">
+<div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCWeSz5WOE7arazIyRAU9ihqTxBYAOeeeQQQwLyCOUphhvGOBjkpCgiDi7nDMmsNSMS4wbCNIhLlN3VTBdZClopdqKqZ1wYXGr-Ps0_AE8nM_5gZrcrk41-b-6t0NmqU5MyoAuxp8NnnUVmosZV0SJra8ZFWwE6i0sLNd_dqBt4siBm9Mq7QuQVezBbhoalnO89fo52WHVIHsEFEb8LNwOf3sCuVMGg6InloAbcJufBymfFunt0o1MH-d2hbub6aSUeuucD6FydSuw");'></div>
+</div>
+<div class="w-full h-0 pb-[100%] relative rounded-lg overflow-hidden group">
+<div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCnZ9NgmMHNBLaBus3qR-azSVdihBF5k59dc5uH4D-iQJBE7-33eK1JvSefZLLt2phDq1qkGI7EX3VBe6xw8WXyPLhAcH7WtJWtJkZMxDCfFCp94n1JGqFx-9Cvobd3k5BwZthG-MaUfroaduomv5GUvDubVIjTtFpFToVK37ukPLQY4kHcst2R2GFnH_UNLeVSYR_lKksw8NbtZI7PXbqoqIkt4We58K-vWxIo_edOnozwbISp0Q3B0XrP0OLU_V4mebInB8VKuC4");'></div>
+</div>
+<div class="w-full h-0 pb-[100%] relative rounded-lg overflow-hidden group">
+<div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAGpPDI9uUumE6wEGNNWnW2o_UOto_3KcnSzBRzO4qzoD3C6uFhWo6S7fBQD9euvsnl9pKui58D11TChjd7K0Rtgq6-zzgB1LwObrwUiprM0rgabDxiLwsAE5-7uT47shQP1QRayUqu7MGLbl7IUb-TO9efool3huPA4Y5P7f4mTNiTqiE5S52SJBhRHzXxcJyARY2SdFeMbPhATVxM2zG41Wb8zKhe2l139EDizChCiwqb4nao2ggZJ2jzkhAX0FxpdzKv8MRo9aQ");'></div>
+</div>
+<div class="w-full h-0 pb-[100%] relative rounded-lg overflow-hidden group">
+<div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAZsS1bAzUYlz11y-LAusG6-mBAEjPGW-MLTC_CcNj5e4DU7M-9ym_OS0hbT_PghPzxE01a9UASK1I0vUTdg0TvuL-efI0w7UBjnv5henZMuq9C23ienHoPlLJXdS4IgkQMkcTw_fBtzivFjLz5Q7_1tkO5D9CX2oKDR00ZbM-RvR1tUUQJE94s5CE6EAYAxoaTx987GiTaK9sS2Z1Eh_H9HW0CCgB-vnVlQQSPJy_oyzIv_zOZ0_evUmuGA0Z455YNBZP3LYxD3qk");'></div>
+</div>
+<div class="w-full h-0 pb-[100%] relative rounded-lg overflow-hidden group">
+<div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCGUoJPMKx0Uk4m3QvDEcpF1_qhFgQ1a6PjhkxsWpvo315YSUSeZZFRWeY40ufbUitbrLFu8B6t-iaSxpY_IHHE0uIyPAOGWxjuLHsJ-deR1q70drn3mSNjN9nn_PtPyVB917G6Kf0M2c3g01Yx78ecGisnCvZjxdI_A6Br68aYE9xcJFZGwP2s7kqC82Wtf9ICGgyX3Y5RRmJk2kgWXKcbY75EgNKbhLKmpf3NU1d_6j4VXo_STwh0O0k_xGJCvLUGOY3uh6IdkHI");'></div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 sm:py-24">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-12">
+<h2 class="text-3xl sm:text-4xl font-bold text-background-dark dark:text-background-light">Наш адрес</h2>
+</div>
+<div class="w-full aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-lg">
+<div class="w-full h-full bg-center bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBqrzz_v5UZJq0uwuG5-q14C0Y1jBowgMbafax0VnxGckeiC5CdwKaMQpLA4-PRUNx73j13iPGeYkb0BZxi5zXyhhM2By4iET2_p_C2xE7WXVWLV8zt-GDrnwJIN8cUj4ftwsyY_BMx3kqMyGWaocKzS7famwaSV-1NPC1uPnWgkrfa1aNa3jxdYPtAvzI_c1lyzzTFXiHUNkk-7Jqx29h5q9twxTm44nSKCnUev4N2LbQ1BzbAbnJLmG0ofzGUKPO0IrzNm0T4Pyw");'></div>
+</div>
+</div>
+</section>
+<section class="py-16 sm:py-24 bg-primary/5 dark:bg-primary/10">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-12">
+<h2 class="text-3xl sm:text-4xl font-bold text-background-dark dark:text-background-light">Заведующая</h2>
+</div>
+<div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 bg-background-light dark:bg-background-dark p-8 rounded-xl border border-primary/20 dark:border-primary/30">
+<div class="w-48 h-48 rounded-full overflow-hidden flex-shrink-0">
+<img alt="Headmistress portrait" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlM1lESFwO00FoHkSX1LsG2QG7WH4664d3AKybMw46tf4bFSfCU5CM-PgxP01bEZrsgxbvfTZszKPHxeHY_T-4zFJ1MRJ15bWUuD3rQQL_smhaMTx9lqfoDkdxrBKO1j0Xn1z7Y4fmzMbk4fBH87AIMPRPTqaz9QMZZ2qSPX3r0TWHPzUaN-CSGLoezEF2f3hBgl2pOGXTxrERmrybFxWuog5vZAEEJY0bR1mJiCVpxYymWPdLdtoq-5mDDIKqWziTXaqVp07zqwM"/>
+</div>
+<div class="text-center md:text-left">
+<h3 class="text-2xl font-bold text-background-dark dark:text-background-light">Елена Петровна</h3>
+<p class="mt-2 text-lg text-primary">Заведующая детским садом</p>
+<p class="mt-1 text-base text-background-dark/70 dark:text-background-light/70">Опыт работы более 15 лет</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 sm:py-24">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto">
+<h2 class="text-3xl sm:text-4xl font-bold text-background-dark dark:text-background-light">Контакты</h2>
+<div class="mt-8 space-y-4 text-lg text-background-dark/80 dark:text-background-light/80">
+<p><strong>Телефон:</strong> <a class="hover:text-primary transition-colors" href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+<p><strong>Email:</strong> <a class="hover:text-primary transition-colors" href="mailto:info@sunshinekids.ru">info@sunshinekids.ru</a></p>
+<p><strong>Адрес:</strong> г. Москва, ул. Солнечная, д. 10</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+
+</body></html>
